@@ -14,3 +14,4 @@ None
 
 ## Outside code
 * Bootstrap CSS and JS: http://getbootstrap.com/
+* xkcd Comic Strip Image: http://xkcd.com/936/

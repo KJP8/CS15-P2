@@ -7,7 +7,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <html>
 <head>
 
-	<title></title>
+	<title>xkcd Password Generator</title>
 	<meta charset='utf-8'>
 
 	<link rel='stylesheet' href='' type='text/css'>
