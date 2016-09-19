@@ -18,7 +18,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
 	<body>
 		
-		<h1>xkcd Password Generator</h1>
+		<h1 class="text-center">xkcd Password Generator</h1>
 		<form class="form-horizontal">
 			<div class="form-group">
 				<label for="numWord" class="col-sm-2 control-label">Number of words:</label>
@@ -70,7 +70,9 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 				</div>
 			</div>
 		</form>
-		<a href="http://xkcd.com/936/"><img src="images/xkcd.png" alt="xkcd_pw_pic"></a>
+		<div class="text-center">
+			<a href="http://xkcd.com/936/"><img src="images/xkcd.png" alt="xkcd_pw_pic"></a>
+		</div>
 		<!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <!-- Link to Bootstrap JS -->
