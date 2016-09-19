@@ -21,9 +21,9 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 		<h1>xkcd Password Generator</h1>
 		<form class="form-horizontal">
 			<div class="form-group">
-				<label for="numWords" class="col-sm-2 control-label">Number of words:</label>
+				<label for="numWord" class="col-sm-2 control-label">Number of words:</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="numWords" placeholder="Please enter a number...">
+					<input type="email" class="form-control" id="inputWord" placeholder="Please enter a number between 1-9">
 				</div>
 			</div>
 			<div class="form-group">
@@ -44,24 +44,33 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 					</div>
 				</div>
 			</div>
-			<div class="radio">
-				<label>
-					<input type="radio" name="caseRadio" id="lowCase" value="option1" checked>
-					All lowercase
-				</label>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="radio">
+						<label>
+							<input type="radio" name="caseRadio" id="lowCase" value="option1" checked>
+							All lowercase
+						</label>
+					</div>
+				</div>
 			</div>
-			<div class="radio">
-				<label>
-					<input type="radio" name="caseRadio" id="upCase" value="option2">
-					All uppercase
-				</label>
-			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="radio">
+						<label>
+							<input type="radio" name="caseRadio" id="upCase" value="option2">
+							All uppercase
+						</label>
+					</div>
+				</div>
+			</div>	
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
 					<button type="submit" class="btn btn-default">Generate</button>
 				</div>
 			</div>
 		</form>
+		<a href="http://xkcd.com/936/"><img src="images/xkcd.png" alt="xkcd_pw_pic"></a>
 		<!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <!-- Link to Bootstrap JS -->
