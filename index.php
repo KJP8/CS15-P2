@@ -19,60 +19,42 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	<body>
 		
 		<h1 class="text-center">xkcd Password Generator</h1>
-		<form class="form-horizontal">
+		
+		<form>
 			<div class="form-group">
-				<label for="numWord" class="col-sm-2 control-label">Number of words:</label>
-				<div class="col-sm-10">
-					<input type="email" class="form-control" id="inputWord" placeholder="Please enter a number between 1-9">
-				</div>
+				<label for="numWord">Number of words</label>
+				<input type="text" class="form-control" id="numWord" placeholder="Please enter a number between 1-9">
 			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox"> Include a number
-						</label>
-					</div>
-				</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Include a symbol
+				</label>
 			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox"> Include a symbol
-						</label>
-					</div>
-				</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Include a number
+				</label>
 			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<div class="radio">
-						<label>
-							<input type="radio" name="caseRadio" id="lowCase" value="option1" checked>
-							All lowercase
-						</label>
-					</div>
-				</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="lowCase" value="low" checked>
+					Lowercase
+				</label>
 			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<div class="radio">
-						<label>
-							<input type="radio" name="caseRadio" id="upCase" value="option2">
-							All uppercase
-						</label>
-					</div>
-				</div>
-			</div>	
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Generate</button>
-				</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="upCase" value="up">
+					Uppercase
+				</label>
 			</div>
+			<button type="submit" class="btn btn-default">Generate</button>
 		</form>
+		
 		<div class="text-center">
+			<p>This is an xkcd-style password generator. Please enter a number between 1 and 9 and select whether or not you want to append a symbol and/or number to the generated password, and whether or not you'd like to make the password all lowercase (default) or all uppercase. By selecting "Generate," a random password containing however many words you asked for and any of the other options you may have chosen will be displayed to you.</p>
 			<a href="http://xkcd.com/936/"><img src="images/xkcd.png" alt="xkcd_pw_pic"></a>
 		</div>
+		
 		<!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <!-- Link to Bootstrap JS -->
