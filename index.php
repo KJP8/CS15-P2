@@ -47,11 +47,11 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 					Uppercase
 				</label>
 			</div>
-			<button type="submit" class="btn btn-default">Generate</button>
+			<button type="submit" class="btn btn-default">Generate Password</button>
 		</form>
 		
 		<div class="text-center">
-			<p>This is an xkcd-style password generator. Please enter a number between 1 and 9 and select whether or not you want to append a symbol and/or number to the generated password, and whether or not you'd like to make the password all lowercase (default) or all uppercase. By selecting "Generate," a random password containing however many words you asked for and any of the other options you may have chosen will be displayed to you.</p>
+			<p>This is an xkcd-style password generator. Please enter a number of words (between 1 and 9). Then, select whether or not you want to append a symbol and/or number to the generated password, and whether or not you'd like to make the password all lowercase (default) or all uppercase. By selecting "Generate Password," a random password containing however many words you asked for and any of the other options you may have chosen will be displayed to you.</p>
 			<a href="http://xkcd.com/936/"><img src="images/xkcd.png" alt="xkcd_pw_pic"></a>
 		</div>
 		
