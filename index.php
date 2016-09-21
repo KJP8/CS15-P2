@@ -20,10 +20,10 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 		
 		<h1 class="text-center">xkcd Password Generator</h1>
 		
-		<form>
+		<form action="index.php">
 			<div class="form-group">
 				<label for="numWord">Number of words</label>
-				<input type="text" class="form-control" id="numWord" placeholder="Please enter a number between 1-9">
+				<input type="text" class="form-control" id="numWord" placeholder="Please enter a number between 1-9" maxlength="1" required>
 			</div>
 			<div class="checkbox">
 				<label>
@@ -55,9 +55,9 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 			<a href="http://xkcd.com/936/"><img src="images/xkcd.png" alt="xkcd_pw_pic"></a>
 		</div>
 		
-		<!-- Link to jQuery -->
+		<!-- Link to jQuery 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <!-- Link to Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Link to Bootstrap JS
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 	</body>
 </html>

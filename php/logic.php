@@ -1,5 +1,7 @@
 <?php
-error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
-ini_set('display_errors', 1); # Display errors on page (instead of a log file)
-?>
+
+#Initializing arrays
+$words = array('one','two','three','four','five','six','seven','eight','nine','ten');
+$symbols = array('!','@','#','$','%','^','&','*','?','-');
+$numbers = array('1','2','3','4','5','6','7','8','9');
 
