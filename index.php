@@ -23,27 +23,27 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 		<form action="index.php">
 			<div class="form-group">
 				<label for="numWord">Number of words</label>
-				<input type="text" class="form-control" id="numWord" placeholder="Please enter a number between 1-9" maxlength="1" required>
+				<input type="text" class="form-control" name="numWord" id="numWord" placeholder="Please enter a number between 1-9" maxlength="1" required>
 			</div>
 			<div class="checkbox">
 				<label>
-					<input type="checkbox"> Include a symbol
+					<input type="checkbox" name="symbol"> Include a symbol
 				</label>
 			</div>
 			<div class="checkbox">
 				<label>
-					<input type="checkbox"> Include a number
+					<input type="checkbox" name="number"> Include a number
 				</label>
 			</div>
 			<div class="radio">
 				<label>
-					<input type="radio" name="optionsRadios" id="lowCase" value="low" checked>
+					<input type="radio" name="case" id="lowCase" value="low" checked>
 					Lowercase
 				</label>
 			</div>
 			<div class="radio">
 				<label>
-					<input type="radio" name="optionsRadios" id="upCase" value="up">
+					<input type="radio" name="case" id="upCase" value="up">
 					Uppercase
 				</label>
 			</div>
