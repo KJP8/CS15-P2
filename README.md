@@ -10,8 +10,9 @@ This application allows a user to enter input to define the letter case, whether
 <>
 
 ## Details for teaching team
-None
+Katy: after doing so much research into preg_match_all with you during section and never figuring out the answer, I did a little more research into the best approach and decided on using the DOMDocument.
 
 ## Outside code
 * Bootstrap CSS: http://getbootstrap.com/
-* Stackoverflow: http://stackoverflow.com/questions/10366458/php-dom-parsing-a-html-list-into-an-array
+* Stackoverflow for parsing html: http://stackoverflow.com/questions/10366458/php-dom-parsing-a-html-list-into-an-array
+* Stackoverflow for stripping all spaces from password: http://stackoverflow.com/questions/2109325/how-to-strip-all-spaces-out-of-a-string-in-php
