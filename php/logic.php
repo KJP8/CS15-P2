@@ -1,11 +1,9 @@
 <?php
 
-#Initializing arrays
-$words = array('one','two','three','four','five','six','seven','eight','nine','ten');
+#Initializing variables
 $symbols = array('!','@','#','$','%','^','&','*','?','-');
 $errormsg = '';
 $defaultVal = 4;
-
 
 #Receive the user input. If the user does not provide input, use default value of 4.
 if (isset($_GET['numWord'])) {
@@ -18,13 +16,21 @@ else {
 #Check if input is not a number. If not a number, provide user with error message and use default value of 4.
 if (!is_numeric($input)) {
   $input = $defaultVal;
-  $errormsg = 'You must enter a number!';
+  $errormsg = 'ERROR: You must enter a number!';
 }
 
 #Check if input is between 1-9. If not between 1-9, provide user with error message and use default value of 4.
 else if ($input < 1 || $input > 9) {
   $input = $defaultVal;
-  $errormsg = 'You must enter a number between 1-9!';
+  $errormsg = 'ERROR: You must enter a number between 1-9!';
+}
+
+$source = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html');
+$doc = new DOMDocument();
+@$doc->loadHTML($source);
+
+foreach ($doc->getElementsByTagName('li') as $li) {
+            $words[] = $li->nodeValue;
 }
 
 #Choose random words from the $words array based on the number provided by the user.
