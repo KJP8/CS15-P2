@@ -25,7 +25,7 @@ else if ($input < 2 || $input > 10) {
   $errormsg = 'ERROR: You must enter a number between 2-10!';
 }
 
-
+# Scrape html page for words between list elements.
 $source = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html');
 $doc = new DOMDocument();
 @$doc->loadHTML($source);
